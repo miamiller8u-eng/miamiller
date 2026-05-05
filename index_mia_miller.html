@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mia Miller</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+height:100%;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#000;
+overflow:hidden;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.page{
+position:relative;
+width:100%;
+height:100vh;
+overflow:hidden;
+background:#000;
+}
+
+.bg{
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(to bottom,
+rgba(0,0,0,.10) 0%,
+rgba(0,0,0,.18) 30%,
+rgba(0,0,0,.42) 72%,
+rgba(0,0,0,.72) 100%
+),
+
+radial-gradient(circle at center,
+rgba(0,0,0,0) 0%,
+rgba(0,0,0,.08) 45%,
+rgba(0,0,0,.46) 100%
+),
+
+url('fondo.jpg') center center / cover no-repeat;
+
+transform:scale(1.03);
+}
+
+.content{
+position:relative;
+z-index:2;
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:22px;
+text-align:center;
+}
+
+.name{
+position:absolute;
+top:48px;
+left:0;
+right:0;
+
+font-size:clamp(2.2rem,8vw,4rem);
+font-weight:800;
+letter-spacing:-0.05em;
+color:#fff3d2;
+
+text-shadow:
+0 4px 18px rgba(0,0,0,.45),
+0 0 24px rgba(0,0,0,.35);
+}
+
+.card{
+width:min(92vw,360px);
+
+padding:22px;
+
+border-radius:30px;
+
+background:
+linear-gradient(180deg,
+rgba(255,255,255,.08),
+rgba(255,255,255,.02)
+),
+rgba(0,0,0,.24);
+
+backdrop-filter:blur(8px);
+-webkit-backdrop-filter:blur(8px);
+
+border:1px solid rgba(255,255,255,.12);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.35);
+}
+
+.text{
+color:rgba(255,245,225,.94);
+
+font-size:1rem;
+line-height:1.45;
+
+margin-bottom:18px;
+
+text-shadow:0 2px 10px rgba(0,0,0,.45);
+}
+
+.button{
+position:relative;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+width:100%;
+min-height:62px;
+
+border-radius:999px;
+
+text-decoration:none;
+
+background:linear-gradient(
+135deg,
+#b88923 0%,
+#f5d97c 45%,
+#d4af37 100%
+);
+
+color:#111;
+
+font-size:1.05rem;
+font-weight:800;
+
+overflow:hidden;
+
+box-shadow:
+0 14px 40px rgba(0,0,0,.35),
+0 0 30px rgba(212,175,55,.18);
+
+transition:all .18s ease;
+}
+
+.button::before{
+content:"";
+position:absolute;
+inset:0;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.42),
+transparent
+);
+
+transform:translateX(-130%);
+animation:shine 3s ease-in-out infinite;
+}
+
+.button span{
+position:relative;
+z-index:1;
+}
+
+.button:hover{
+transform:translateY(-2px);
+
+box-shadow:
+0 18px 48px rgba(0,0,0,.42),
+0 0 40px rgba(212,175,55,.24);
+}
+
+.sub{
+margin-top:12px;
+
+font-size:.78rem;
+color:rgba(255,245,225,.7);
+
+text-shadow:0 2px 10px rgba(0,0,0,.45);
+}
+
+.footer{
+position:absolute;
+bottom:22px;
+left:0;
+right:0;
+
+text-align:center;
+
+color:rgba(255,255,255,.45);
+
+font-size:.72rem;
+letter-spacing:.08em;
+}
+
+@keyframes shine{
+0%,60%{
+transform:translateX(-130%);
+}
+
+100%{
+transform:translateX(130%);
+}
+}
+
+@media (min-width:520px){
+
+body{
+padding:18px;
+background:
+radial-gradient(circle at top,#18120a 0%,#050505 55%,#000 100%);
+}
+
+.page{
+width:min(94vw,430px);
+height:min(92vh,820px);
+
+border-radius:42px;
+
+box-shadow:
+0 34px 90px rgba(0,0,0,.72),
+inset 0 0 0 1px rgba(255,255,255,.06);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="bg"></div>
+
+<div class="content">
+
+<h1 class="name">Mia Miller</h1>
+
+<div class="card">
+
+<p class="text">
+Come a little closer...<br>
+I don’t post everything here.
+</p>
+
+<a class="button"
+href="https://onlyfans.com/miamillervc"
+target="_blank">
+
+<span>Unlock My Private Page 🔥</span>
+
+</a>
+
+<div class="sub">
+18+ only • official page
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© Mia Miller
+</div>
+
+</div>
+
+</body>
+</html>
